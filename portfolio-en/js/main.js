@@ -9,7 +9,7 @@ $('document').ready(function(){
 
     /* Guardo en la variable "profesion" la etiqueta que contiene el texto 
     al cual quiero aplicar el efecto de revelado.*/
-    const profesion = baffle(".profesion");
+    const profesion = baffle(".job");
 
     /* Le asigno a la variable profesión (que contiene el texto que quiero animar) los caracteres a utilizar para 
     la animación del texto revelado (puedes utilizar cualquier tipo de carácteres). También asigno la velocidad que tendrá el efecto de las letras*/
@@ -34,7 +34,7 @@ $('document').ready(function(){
         }
     });
 
-    $('#boton-arriba').click(function(){
+    $('#button-class').click(function(){
         $('body, html').animate({
           scrollTop: '0px'
         }, 300);
@@ -42,9 +42,9 @@ $('document').ready(function(){
    
     $(window).scroll(function(){
       if( $(this).scrollTop() > 0 ){
-        $('#boton-arriba').slideDown(300);
+        $('#button-class').slideDown(300);
       } else {
-        $('#boton-arriba').slideUp(300);
+        $('#button-class').slideUp(300);
       }
     });
 });
